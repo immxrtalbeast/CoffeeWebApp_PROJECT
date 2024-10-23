@@ -363,25 +363,25 @@ function ChangeCartSumma(){
 let AddedAdditives = []
 
 // ПЕРЕХОД К ОПЛАТЕ
-document.querySelector('.ToPayment').addEventListener('click', () =>{
+// document.querySelector('.ToPayment').addEventListener('click', () =>{
   
-    const paschalca = document.createElement('div')
-    paschalca.innerHTML = `
-    <img id="pashalco" src="${'http://localhost:3000/pashalco.jfif '}"alt="Photo" />
-    <div id="pudgeText">PUDGE</div>` //pashalca.png pashalca.jpg pashalco.jfif DANGER_OCHEN_OPASNAYA_PASHALCO_UBRAT_POSTORONIH_ACHTUNG.png
-    document.querySelector('.modalBasket').appendChild(paschalca)
-    document.getElementById('pashalco').style.transform = 'rotate(0deg) scale(0)';
-    document.getElementById('pudgeText').style.transform = 'rotate(0deg) scale(0)';
+//     const paschalca = document.createElement('div')
+//     paschalca.innerHTML = `
+//     <img id="pashalco" src="${'http://localhost:3000/pashalco.jfif '}"alt="Photo" />
+//     <div id="pudgeText">PUDGE</div>` //pashalca.png pashalca.jpg pashalco.jfif DANGER_OCHEN_OPASNAYA_PASHALCO_UBRAT_POSTORONIH_ACHTUNG.png
+//     document.querySelector('.modalBasket').appendChild(paschalca)
+//     document.getElementById('pashalco').style.transform = 'rotate(0deg) scale(0)';
+//     document.getElementById('pudgeText').style.transform = 'rotate(0deg) scale(0)';
 
-    // Используем setTimeout для задержки перед применением конечного состояния
-    setTimeout(() => {
-        document.getElementById('pashalco').style.transform = 'rotate(3600deg) scale(1)';
-        document.getElementById('pudgeText').style.transform = 'rotate(3600deg) scale(1)'
-    }, 1000)
+//     // Используем setTimeout для задержки перед применением конечного состояния
+//     setTimeout(() => {
+//         document.getElementById('pashalco').style.transform = 'rotate(3600deg) scale(1)';
+//         document.getElementById('pudgeText').style.transform = 'rotate(3600deg) scale(1)'
+//     }, 1000)
     
 
 
-})
+// })
 // КНОПКИ ХОТБАР
 document.querySelectorAll('.hotbarLink').forEach(button =>{ 
   button.addEventListener('click', () =>{
