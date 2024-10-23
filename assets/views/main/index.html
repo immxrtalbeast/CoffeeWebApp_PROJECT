@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roastery Bakery Kitchen</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="">
+      <div class="company_logo">
+        <img src="logo.svg" alt="Photo" />
+      </div>
+    </header>
+
+    <main>
+      <div class="hotbarProduct">
+        <a class="hotbarLink" href="#catalog1">Популярное</a>
+        <a class="hotbarLink" href="#catalog2">Кофе</a>
+        <a class="hotbarLink" href="#catalog3">Напитки</a>
+        <a class="hotbarLink" href="#catalog4">Сендвичи</a>
+      </div>
+
+      <div>
+        <p class="category">Популярное</p>
+        <div class="catalog" id="catalog1"></div>
+
+        <p class="category">Кофе</p>
+        <div class="catalog" id="catalog2"></div>
+
+        <p class="category">Напитки</p>
+        <div class="catalog" id="catalog3"></div>
+
+        <p class="category">Сендвичи</p>
+        <div class="catalog" id="catalog4"></div>
+      </div>
+
+      <div class="go_basket" id="basket">
+        <button>
+          <img class="basketImg" src="icon basket.png" alt="" /> 0₽
+        </button>
+      </div>
+
+      <section class="modal hidden" id="modal">
+        <div class="modalMain">
+          <div class="closeModalBtn">
+            <span class="btnClose">⨉</span>
+          </div>
+        
+          <div class="mainInformation">
+
+          </div>
+        
+          <div class="coffeeAdditives">
+            <p class="modalAdditivesTitle">Добавки</p>
+            <div class="allAdditives">
+            </div>
+          </div>
+        
+          <div class="quantityAddCart">
+            <div class="quantitySelection">
+              <span class="quantityMinus">−</span>
+              <span class="quantity">1</span>
+              <span class="quantityPlus">+</span>
+            </div>
+            <div class="addToCart" id = "CartAddButton">
+              <p>Добавить</p>
+              <p class="PriceDayn">${price} руб</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="modalBasket hidden" id="modalBasket">
+          <div class="closeModalBtn">
+            <span class="btnClose basketClose">⨉</span>
+          </div>
+    
+          <p class="basketTitle">Корзина</p>
+    
+          <div class="goodsInBasket" id="innerbasketGoods">
+            </div>
+          </div>
+          <div class = 'CartIsEmpty'> Корзина пуста! </div>
+
+
+          <p class="cardMore">Что-то еще?</p>
+          <div>
+            <div class="catalog" id="catalogBasket">
+              <div class="card cardBasket">
+                <!-- <div id="${basketId}">
+                  <p class="cardTitile">${title}</p>
+                  <div class="cardImg"><img src="${png}" alt="Photo" /></div>
+    
+                  <div class="cardPriceVolume">
+                    <p class="price">${price} руб</p>
+                    <p class="volume"><span>${volumeStandart}</span> шт</p>
+                  </div>
+                  <button class="goToCart ${goToCart}">Добавить</button>
+                </div>
+              </div> -->
+            </div>
+          </div>
+    
+          <div>
+            <div class="addToCart basketAdd">
+              <p class="ToPayment">К оплате 0₽</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="overlay hidden"></div>
+    </main>
+
+    <script src= "catalog.js"></script>
+    <script src="ROOT.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

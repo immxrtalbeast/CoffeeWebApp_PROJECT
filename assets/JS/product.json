@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Капучино",
+    "png": "/",
+    "price": "120",
+    "volume": "200",
+    "description": "/",
+    "isAvalibl": "1"
+  },
+  {
+    "id": 2,
+    "title": "Американо",
+    "png": "/",
+    "price": "100",
+    "volume": "200",
+    "description": "/",
+    "count": "3"
+  },
+  {
+    "id": 3,
+    "title": "Эспрессо",
+    "png": "/",
+    "price": "100",
+    "volume": "100",
+    "description": "/",
+    "count": "2"
+  }
+]

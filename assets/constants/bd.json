@@ -1,0 +1,79 @@
+{  "1":
+    {
+    "id": 1,
+    "title": "Капучино",
+    "png": "Cappuccino.png",
+    "price": 120,
+    "price_large": 180,
+    "volumeStandart": 200,
+    "volumeLarge": 300,
+    "description":
+      "Кофейный напиток на основе эспрессо с добавлением в него подогретого до 65 градусов вспененного молока.",
+    "count": "1",
+    "category_id": "1",
+    "basket_id": 1
+    },
+    "2":
+  {
+    "id": 2,
+    "title": "Айс Латте",
+    "png": "https://realslimpudge.github.io/coffeeWepApp/assets/img/Ice%20Latte.png",
+    "price": "190",
+    "price_large": "290",
+    "volumeStandart": "200",
+    "volumeLarge": "300",
+    "description": "/",
+    "count": "0",
+    "category id": "1",
+    "basket id": 2
+  },
+  "3":
+  {
+    "id": 3,
+    "title": "Матча Бамбл",
+    "png": "Match Bumble.png",
+    "price": "190",
+    "price_large": "290",
+    "volumeStandart": "200",
+    "volumeLarge": "",
+    "description": "/",
+    "count": "1",
+    "category id": "1"
+  },
+  "4":
+  {
+    "id": 5,
+    "title": "Капучино",
+    "png": "Cappuccino.png",
+    "price": "120",
+    "price_large": "170",
+    "volume": "200",
+    "description": "/",
+    "count": "1",
+    "category id": "2"
+  },
+  "5":
+  {
+    "id": 6,
+    "title": "Американо",
+    "png": "American.png",
+    "price": "100",
+    "price_large": "180",
+    "volume": "200",
+    "description": "/",
+    "count": "3",
+    "category id": "3"
+  },
+  "6":
+  {
+    "id": 7,
+    "title": "Эспрессо",
+    "png": "Espresso.png",
+    "price": "100",
+    "price_large": "160",
+    "volume": "40",
+    "description": "/",
+    "count": "2",
+    "category id": "4"
+  }
+}

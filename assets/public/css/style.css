@@ -1,0 +1,529 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  max-width: 430px;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+html {
+  margin: 0 auto;
+  scroll-padding-top: 110px;
+}
+
+/* header part */
+
+.company_logo {
+  max-width: 335px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+/* body part */
+
+main {
+  background-color: #24272b;
+  padding: 0 19px 0 19px;
+  position: relative;
+}
+
+.hotbarProduct {
+  display: flex;
+  max-width: 389px;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-bottom: 17px;
+  align-items: center;
+  position: sticky;
+  top: 10px;
+  padding: 15px 0 0 0;
+}
+
+.hotbarLink {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #24272b;
+  padding: 10px 10px;
+  border-radius: 20px;
+}
+
+.onActive {
+  color: #24272b;
+  padding: 12px 12px;
+  background-color: #fff;
+  border-radius: 20px;
+  font-weight: 500;
+  animation: in 500ms ease;
+}
+
+.category {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  margin: 17px 0 8px 10px;
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  row-gap: 20px;
+  justify-content: space-between;
+}
+
+.card {
+  max-width: 186px;
+  background-color: #fff;
+  border-radius: 13px;
+  padding: 23px 17px 15px 17px;
+  /*   padding: 23px 10px 15px 10px; */
+}
+
+.cardTitile {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+
+.cardImg {
+  max-width: 123px;
+  margin: 10px auto 10px auto;
+}
+
+.cardImg img {
+  width: 100%;
+}
+
+.cardPriceVolume {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
+.volume {
+  font-size: 10px;
+  font-weight: 400;
+  color: #000;
+}
+
+.goToCart {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  padding: 6px 41px;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.46);
+  background: #f9f9f9;
+  border: 1px solid #f9f9f9;
+  cursor: pointer;
+}
+
+.btnOnActive {
+  background-color: yellow;
+}
+
+.price_for_backend{
+  display: none;
+}
+.go_basket {
+  position: sticky;
+  max-width: 400px;
+  bottom: 0;
+  padding: 0px 0px 22px 17px;
+  border-radius: 35px;
+  justify-content: end;
+  display: flex; /* СВО */
+}
+
+.go_basket button {
+  border: 1px solid #c67124;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #c67124;
+  padding: 8px 17px;
+  border-radius: 13px;
+  cursor: pointer;
+  width: 108px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.basketImg {
+  width: 24px;
+  position: sticky;
+}
+
+/* modal part */
+
+.modal {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 85vh;
+  background-color: #fff;
+  padding: 17px 22px 52px 28px;
+  border-radius: 20px 20px;
+  z-index: 2;
+  overflow-y: auto;
+}
+
+.modalMain {
+  width: 100%;
+}
+
+.btnClose {
+  font-size: 24px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.closeModalBtn {
+  display: flex;
+  justify-content: end;
+}
+
+.mainInformation {
+  padding: 42px 26px 34px 27px;
+  border-radius: 13px;
+  box-shadow: 0 3px 11px 3px rgba(119, 114, 176, 0.3);
+  background: #fff;
+}
+
+.modalImgTitle {
+  display: flex;
+  justify-content: space-between;
+  max-width: 314px;
+  margin: 0 auto;
+}
+
+.modalImg {
+  width: 150px;
+}
+
+.modalImg img {
+  width: 100%;
+}
+
+.modalDescription {
+  margin-top: 13px;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.modalText {
+  max-width: 122px;
+}
+
+.volumeQuantity {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+
+.modalVolume {
+  border-radius: 9px;
+  padding: 5px 13px;
+  width: 115px;
+  text-align: center;
+  box-shadow: 0 3px 12px 0px rgba(119, 114, 176, 0.3);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.twoVolume {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.basicPrice {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.basicVolume {
+  font-size: 9px;
+  font-weight: 300;
+}
+
+.modalAdditivesTitle {
+  margin: 40px 0 13px 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.allAdditives {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.additives {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 13px;
+  box-shadow: 0 3px 11px 3px rgba(119, 114, 176, 0.3);
+  background: #fff;
+  padding: 16px 22px 17px 18px;
+  align-items: center;
+  /* margin - костыль, надо переделать, чтоб заполнялось по контенту */
+  /* margin-bottom: 22%; */
+  /* margin-bottom: 30vh; */
+}
+
+.additivesTitle {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.addToCoffee {
+  display: flex;
+  border-radius: 9px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.46);
+  background: #fcfcfc;
+  padding: 6px 8px 7px 7px;
+  align-items: center;
+  max-width: 105px;
+  column-gap: 6px;
+}
+
+.modalActive {
+  border: 3px solid #c67124;
+  box-shadow: none;
+}
+
+.additivesPlus {
+  font-size: 30px;
+  line-height: 20px;
+}
+
+.additivesPrice {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.quantityAddCart {
+  display: flex;
+  position: fixed;
+  bottom: -40px;
+  justify-content: space-between;
+  max-width: 380px;
+  margin: 35px auto 0 auto;
+  position: sticky;
+}
+
+.quantitySelection {
+  display: flex;
+  justify-content: space-between;
+  width: 105px;
+  background-color: #e6e6e6;
+  padding: 7px 7px;
+  border-radius: 4px;
+}
+
+.quantity {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.quantityPlus {
+  font-size: 30px;
+  line-height: 24px;
+}
+
+.quantityMinus {
+  font-size: 30px;
+  line-height: 24px;
+}
+
+.addToCart {
+  border: none;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 10px 10px;
+  border-radius: 4px;
+  background-color: #c67124;
+  color: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  align-items: center;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+.modalOpen {
+  overflow-y: auto;
+  position: fixed;
+}
+
+/* basketPart */
+
+.basketClose {
+  margin: 0;
+  line-height: 20px;
+}
+
+.basketTitle {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-align: center;
+  line-height: 20px;
+}
+
+
+.CartIsEmpty{
+  text-align: center;
+  font-size: 24px;
+}
+
+.goodsInBasket {
+  display: flex;
+  flex-direction: column;
+  row-gap: 21px;
+}
+
+.selectGood {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 18px 22px 16px;
+  border-radius: 13px;
+  box-shadow: 0 3px 11px 3px rgba(119, 114, 176, 0.3);
+  background: #fff;
+  max-width: 385px;
+}
+
+.cartImgText {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.goodText {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+
+.goodImg {
+  max-width: 90px;
+}
+
+.goodImg img {
+  width: 100%;
+}
+
+.goodTitle {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.goodAdditives {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.basketVolume {
+  font-size: 12px;
+}
+
+.cartQuantityPrice {
+  display: flex;
+  flex-direction: column;
+  row-gap: 13px;
+}
+
+.basketPrice {
+  font-size: 16px;
+  font-weight: 600;
+  /* text-align: center; */
+  margin-left: 10px;
+}
+
+.basketQuantity {
+  width: 98px;
+  padding: 5px 7px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.46);
+}
+
+.cardMore {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 34px 0 21px 12px;
+}
+
+.basketAdd {
+  width: 380px;
+  margin-top: 30px;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 0 3px 11px 3px rgba(119, 114, 176, 0.3);
+}
+
+.cardBasket {
+  box-shadow: 0 3px 11px 3px rgba(119, 114, 176, 0.3);
+}
+
+.modalBasket {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 85vh;
+  background-color: #fff;
+  padding: 17px 22px 52px 28px;
+  border-radius: 20px 20px;
+  z-index: 2;
+  overflow-y: auto;
+}
+
+#pashalco{
+  transition: transform 1s ease-in-out;
+  position: absolute;
+  top: 0;
+}
+#pudgeText {
+  position: absolute;
+  color: red;
+  font-size: 5em;
+  top: 17%;
+  left: 17%;
+  transform: translate(42px, 18px);;
+  transition: transform 1s ease-in-out;
+}
