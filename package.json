@@ -7,9 +7,9 @@
     "start": "npx nodemon assets/js/express/server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "VMO-11",
   "license": "ISC",
-  "description": "",
+  "description": "Educational Project",
   "dependencies": {
     "express": "^4.21.0",
     "sqlite3": "^5.1.7"
