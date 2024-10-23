@@ -11,7 +11,7 @@ Project VMO-11. 4 group
 Educational Project.  
 A web application for the 8th building coffee shop. It was created to solve the problem of queues during breaks. Allows you to order coffee and other items from the menu in advance. A queue system has been thought out to evenly distribute the workload.
 ## Dependencies
-```express ^4.21.0```, ```sqlite3 5.1.7``` или выше.
+```express ^4.21.0```, ```sqlite3 5.1.7``` or higher.
 
 ## How to start
 1. Clone repo
