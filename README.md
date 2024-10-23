@@ -1,9 +1,10 @@
 <!--зависимости-->
 # CoffeeWebApp_project
-<img src="assets/public/Img/logo.png" alt="Логотип проекта">
-![Static Badge](https://img.shields.io/badge/Node.JS-green?logo=nodedotjs)
-![Static Badge](https://img.shields.io/badge/JavaScript-yellow?logo=javascript)
-![Static Badge](https://img.shields.io/badge/SQLite3-gray?logo=sqlite)  
+
+![Static Badge](https://img.shields.io/badge/Node.JS-green?logo=nodedotjs) 
+![Static Badge](https://img.shields.io/badge/JavaScript-yellow?logo=javascript) 
+![Static Badge](https://img.shields.io/badge/SQLite3-gray?logo=sqlite)   
+![Logotype](assets/public/Img/logo.png)
 Проект ВМО-11 4 группа
 
 ## Описание
