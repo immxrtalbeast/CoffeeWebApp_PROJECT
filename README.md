@@ -5,27 +5,28 @@
 ![Static Badge](https://img.shields.io/badge/JavaScript-yellow?logo=javascript) 
 ![Static Badge](https://img.shields.io/badge/SQLite3-gray?logo=sqlite)   
 ![Logotype](assets/public/Img/logo.png)
-Проект ВМО-11 4 группа
+Project VMO-11. 4 group
 
-## Описание
-Веб-приложение для кофейни 8-го корпуса. Создана для решения проблемы очередей во время перерывов. Позволяет заказывать кофе и другие позиции из меню заранее. Продумана система очереди для равномерного распределения рабочей нагрузки.
-## Зависимости
-```express ^4.21.0```, ```sqlite3 5.1.7``` или выше.
+## Info
+Educational Project.  
+A web application for the 8th building coffee shop. It was created to solve the problem of queues during breaks. Allows you to order coffee and other items from the menu in advance. A queue system has been thought out to evenly distribute the workload.
+## Dependencies
+```express ^4.21.0```, ```sqlite3 5.1.7``` or higher.
 
-## Как начать
-1. Клонирование репозитория
+## How to start
+1. Clone repo
   ```bash
   git clone https://github.com/immxrtalbeast/CoffeeWebApp_PROJECT.git
   ```
-2. Установка зависимостей
+2. Install dependencies
   ```javascript
    npm install
   ```
-3. Запуск сервера
+3. Server launch
   ```javascript
    npm start
   ```
-4. Открыть проект на локальном хосте  
+4. Open project on localhost  
   ```bash
     http://localhost:3000
   ```
