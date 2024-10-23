@@ -1,6 +1,6 @@
 <!--зависимости-->
 # CoffeeWebApp_project
-
+<img src="assets/public/Img/logo.png" alt="Логотип проекта">
 ![Static Badge](https://img.shields.io/badge/Node.JS-green?logo=nodedotjs)
 ![Static Badge](https://img.shields.io/badge/JavaScript-yellow?logo=javascript)
 ![Static Badge](https://img.shields.io/badge/SQLite3-gray?logo=sqlite)  
@@ -13,10 +13,18 @@
 
 ## Как начать
 1. Клонирование репозитория
-  ```git clone https://github.com/immxrtalbeast/CoffeeWebApp_PROJECT.git```
+  ```bash
+  git clone https://github.com/immxrtalbeast/CoffeeWebApp_PROJECT.git
+  ```
 2. Установка зависимостей
-  ```npm install```
+  ```javascript
+   npm install
+  ```
 3. Запуск сервера
-    ```npm start```
-4. Открыть проект на локальном хосте
-    ```Перейти на localhost:3000 ```
+  ```javascript
+   npm start
+  ```
+4. Открыть проект на локальном хосте  
+  ```bash
+    http://localhost:3000
+  ```
