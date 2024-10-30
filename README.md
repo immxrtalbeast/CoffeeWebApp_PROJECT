@@ -3,7 +3,8 @@
 
 ![Static Badge](https://img.shields.io/badge/Node.JS-green?logo=nodedotjs) 
 ![Static Badge](https://img.shields.io/badge/JavaScript-yellow?logo=javascript) 
-![Static Badge](https://img.shields.io/badge/SQLite3-gray?logo=sqlite)   
+![Static Badge](https://img.shields.io/badge/SQLite3-gray?logo=sqlite)
+![Static Badge](https://img.shields.io/badge/Docker-azure?logo=docker)   
 ![Logotype](assets/public/Img/logo.png)
 Project VMO-11. 4 group
 
