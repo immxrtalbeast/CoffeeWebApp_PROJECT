@@ -6,6 +6,11 @@ let goToCart = document.querySelector('.goToCart');
 const btnBasket = document.getElementById('basket');
 const CartEmptyWarn = document.querySelector('.CartIsEmpty');
 
+// Добавляем новые константы
+const modalPayment = document.querySelector('.modalPayment');
+const confirmPaymentBtn = document.querySelector('.confirmPayment');
+const paymentClose = document.querySelector('.paymentClose');
+
 
 
 
@@ -76,7 +81,7 @@ function render(data) {
         document.querySelector(".mainInformation").innerHTML = `
             <div class="modalImgname">
               <div class="modalImg">
-                <img class = "Selfie" src="${photo}" alt="Photo" />
+                <img class = "Selfie" src="${'http://' + photo}" alt="Photo" />
               </div>
               <div class="modalText">
                 <p class="cardTitile">${name}</p>
@@ -344,7 +349,7 @@ btnBasket.addEventListener('click', () => {
 });
 
 
-// ОБНОВИТЬ СУММУ ПОЗИЦИЙ НА КНОПКЕ С КОРЗИНОЙ
+// ОБНОВИТЬ СУММУ ПОЗИЦИЙ НА КНОПК С КОРЗИНОЙ
 function ChangeCartSumma(){
   var childrens = [].slice.call(document.getElementById('innerbasketGoods').getElementsByClassName('basketGood'),0);
   let summa = 0
@@ -397,6 +402,51 @@ document.querySelectorAll('.hotbarLink').forEach(button =>{
     
   })
 })
+
+// Обработчик открытия окна оплаты
+document.querySelector('.ToPayment').addEventListener('click', () => {
+  const totalAmount = document.querySelector('.ToPayment').textContent.replace('К оплате ', '');
+  modalPayment.querySelector('.finalAmount').textContent = totalAmount;
+  
+  modalBasket.classList.add('hidden');
+  modalPayment.classList.remove('hidden');
+});
+
+// Обработчик закрытия окна оплаты
+paymentClose.addEventListener('click', () => {
+  modalPayment.classList.add('hidden');
+  overlay.classList.add('hidden');
+  body.classList.remove('modalOpen');
+});
+
+// Переключение методов оплаты
+document.querySelectorAll('.paymentMethod').forEach(method => {
+  method.addEventListener('click', () => {
+    document.querySelectorAll('.paymentMethod').forEach(m => m.classList.remove('active'));
+    method.classList.add('active');
+  });
+});
+
+// Подтверждение оплаты
+confirmPaymentBtn.addEventListener('click', () => {
+  const name = document.getElementById('customerName').value;
+  const phone = document.getElementById('customerPhone').value;
+  
+  if (!name || !phone) {
+    alert('Пожалуйста, заполните все поля');
+    return;
+  }
+  
+  // Здесь можно добавить логику отправки заказа
+  alert('Заказ успешно оформлен!');
+  modalPayment.classList.add('hidden');
+  overlay.classList.add('hidden');
+  body.classList.remove('modalOpen');
+  
+  // Очистка корзины
+  document.getElementById('innerbasketGoods').innerHTML = '';
+  ChangeCartSumma();
+});
 
 fetchData();
 

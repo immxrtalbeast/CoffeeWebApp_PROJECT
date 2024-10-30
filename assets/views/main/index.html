@@ -116,6 +116,48 @@
         </div>
       </section>
 
+      <!-- Добавляем новое модальное окно для оплаты -->
+      <section class="modalPayment hidden" id="modalPayment">
+        <div class="modalMain">
+          <div class="closeModalBtn">
+            <span class="btnClose paymentClose">⨉</span>
+          </div>
+
+          <p class="paymentTitle">Оплата заказа</p>
+
+          <div class="paymentForm">
+            <div class="formGroup">
+              <label>Имя</label>
+              <input type="text" id="customerName" placeholder="Введите ваше имя">
+            </div>
+            
+            <div class="formGroup">
+              <label>Телефон</label>
+              <input type="tel" id="customerPhone" placeholder="+7 (___) ___-__-__">
+            </div>
+
+            <div class="formGroup">
+              <label>Способ оплаты</label>
+              <div class="paymentMethods">
+                <div class="paymentMethod active">
+                  <img src="card.svg" alt="Card">
+                  <span>Картой</span>
+                </div>
+                <div class="paymentMethod">
+                  <img src="cash.svg" alt="Cash">
+                  <span>Наличными</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="paymentSummary">
+            <p>Итого к оплате: <span class="finalAmount">0₽</span></p>
+            <button class="confirmPayment">Оплатить</button>
+          </div>
+        </div>
+      </section>
+
       <div class="overlay hidden"></div>
     </main>
 

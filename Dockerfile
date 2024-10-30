@@ -1,20 +1,15 @@
-# Используем официальный образ Node.js в качестве базового образа
-FROM node:14
-
-# Устанавливаем рабочую директорию внутри контейнера
+# Build stage
+FROM node:18 AS builder
 WORKDIR /app
-
-# Копируем package.json и package-lock.json (или yarn.lock) в рабочую директорию
 COPY package*.json ./
-
-# Устанавливаем зависимости
-RUN npm install 
-
-# Копируем все файлы проекта в рабочую директорию
+RUN npm ci
 COPY . .
 
-# Открываем порт, который будет использоваться приложением (например, 3000)
+# Production stage
+FROM node:18-slim
+WORKDIR /app
+COPY --from=builder /app .
+
 EXPOSE 3000
 
-# Запускаем приложение
 CMD ["npm", "start"]
