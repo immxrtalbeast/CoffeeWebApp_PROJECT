@@ -2,14 +2,14 @@ import express from 'express'
 import path from "path";
 import { fileURLToPath } from "url";
 import { getQuery, getGoods, getadd_to_coffee, getvolume_price } from './db.js'
-
+import cors from "cors"
 
 
 
 const app = express()
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-
+app.use(cors());
 // Путь к корню проекта
 const projectRoot = path.resolve(__dirname, '../..');
 
@@ -30,13 +30,12 @@ app.get('/api', async (req, res) => {
 })
 
 app.get('/', async (req,res) => {
-    
     res.sendFile(path.join(projectRoot, 'views/main/index.html'));
 })
 
 const PORT = 3000
 const HOST = 'localhost'
 
-app.listen(PORT, HOST, () => {
-    console.log('Сервер запущен!')
+app.listen(PORT, () => {
+    console.log(`Server is running at http://${HOST}:${PORT}`);
 })

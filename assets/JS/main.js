@@ -76,7 +76,7 @@ function render(data) {
         document.querySelector(".mainInformation").innerHTML = `
             <div class="modalImgname">
               <div class="modalImg">
-                <img class = "Selfie" src="${'http://' +  photo}" alt="Photo" />
+                <img class = "Selfie" src="${photo}" alt="Photo" />
               </div>
               <div class="modalText">
                 <p class="cardTitile">${name}</p>

@@ -4,13 +4,14 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "npx nodemon assets/js/express/server.js"
+    "start": "cd assets/JS/express && node server"
   },
   "keywords": [],
   "author": "VMO-11",
   "license": "ISC",
   "description": "Educational Project",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.21.0",
     "sqlite3": "^5.1.7"
   }
